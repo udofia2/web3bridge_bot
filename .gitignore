@@ -1,0 +1,11 @@
+doc
+__pycache__/
+*.pyc
+.env
+bot.db
+alembic/versions/*
+.DS_Store
+.vscode/
+.idea/
+*.pytest_cache/
+*.mypy_cache/
