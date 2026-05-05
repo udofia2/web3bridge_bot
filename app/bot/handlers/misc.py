@@ -18,6 +18,7 @@ async def cmd_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/topicopen - Reopen topic\n"
         "/topicpin - Pin a replied message in topic\n"
         "/topiclist - List all topic settings\n\n"
+            "/topicdebug - Show parsed target/debug info\n"
         "General Moderation\n"
         "/ban, /unban, /kick\n"
         "/mute [minutes], /unmute\n"

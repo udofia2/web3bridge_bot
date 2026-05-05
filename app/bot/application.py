@@ -34,6 +34,7 @@ from app.bot.handlers.topic import (
     cmd_topic_open,
     cmd_topic_pin,
     cmd_topic_restrict,
+    cmd_topic_debug,
 )
 from app.config import Settings
 from app.services.moderation_service import FloodTracker
@@ -64,6 +65,7 @@ def build_application(settings: Settings) -> Application:
         ("topicopen", cmd_topic_open),
         ("topicpin", cmd_topic_pin),
         ("topiclist", cmd_topic_list),
+        ("topicdebug", cmd_topic_debug),
     ]:
         app.add_handler(CommandHandler(cmd, fn))
 
